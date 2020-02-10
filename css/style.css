@@ -1,0 +1,649 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font: normal 18px 'Fira Sans'; 
+}
+a{
+	text-decoration: none;
+	outline: none; /* Убираем контур вокруг ссылки */
+}
+h1{
+	margin: 0;
+	bottom: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style-type: none;
+}
+.wrap{
+	width: 100%;
+	min-height: 100%;
+	min-width: 980px;
+	background-color: #f6f6f6;
+	position: relative;
+	z-index: 10; /* чтобы прибить футер */
+	padding-bottom: 68px; /* чтобы прибить футер */
+}
+
+/* -------------------ГЛАВНАЯ СТРАНИЦА------------------ */
+.object{
+	height: 321px;
+	width: 305px;
+	position: absolute;
+	right: 0; 
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+ .object-foto{
+	width: 145px;
+	height: 145px;
+	border-radius: 50%;
+	margin-bottom: -72px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 20;
+} 
+.object-foto-img{	
+	height: 145px;	
+	border-radius: 50%; 
+	
+}
+.object-content{
+	width: 303px;
+	background-color: #fff;
+	border-radius: 12px;
+	position: relative;
+	z-index: 10;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .30);
+}
+.object-content-item{
+	text-align: center;
+	padding-top: 90px;	
+}
+.object-content-item-text{
+	display: inline-block;
+	width: 200px;
+	font: normal 21px 'Open Sans Semibold';
+	color: #414141;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.object-content-button{
+	height: 80px;
+	background-color: #33c1e3;
+	position: relative;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	text-align: center;
+	line-height: 4.5;
+}
+.object-content-button-link{
+	display: inline-block;
+	height: 36px;
+	width: 135px;
+	border: 2px solid #fff;
+	border-radius: 21px;
+	text-align: center;	
+	font: bold 14px 'Fira Sans';	
+	color: #fff;
+	line-height: 37px;
+	transition: .6s;
+} 
+.object-content-button-link:hover{	
+	color: #33c1e3;
+	background-color: #fff;
+	transition: .6s;
+}
+.header{
+	height: 79px;
+	background-color: #fff;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .20);
+	margin-bottom: 25px;
+}
+.conteiner{
+	width: 940px;
+	margin: auto;
+	position: relative;
+}
+.header-name{
+	display: inline-block;
+	height: 100%;
+	background: url(/img/page_2/avatar.png) no-repeat center left;
+	font: normal 18px 'Fira Sans';	
+	line-height: 81px;
+	color: #727272;
+	padding-left: 80px;
+}
+.header-contacts{
+	font: bold 18px 'Fira Sans';
+	color: #33c1e3;
+	border-bottom: 1px dotted #33c1e3;
+	position: absolute;
+	right: 0;
+	top: 30px;
+	transition: .05s;
+	display: inline-block;
+}
+.header-contacts:after{
+	position: absolute;
+	top: 100%; left: 0;
+	width: 100%;
+	height: 15px;
+	content: "";
+}
+.header-contacts:hover{
+	font: bold 18px 'Fira Sans';
+	color: #e85f61;
+	border-bottom: 1px dotted #e85f61;
+	transition: .05s;
+}
+                 /* -----  спойлер ---- */
+#block{
+  display: none;
+  }
+#link:hover #block{
+  display: block;
+  }    
+.header-contacts-spoiler{
+	padding: 10px 0 10px 0;
+	width: 193px;
+	border: 1px solid #dedede;
+	border-radius: 10px; 
+	background: #fff; 
+	position: absolute;
+	top: 100%;
+	font-size: 0;	
+	z-index: 10;
+	left: -30px;
+	margin-top: 15px;
+}
+.header-contacts-spoiler-li{
+	height: 45px;
+	width: 193px;
+	padding-left:  48px; 
+	padding-top: 15px;
+}
+.header-contacts-spoiler-link{
+	font: 200 18px 'Fira Sans';
+	color: #727272;
+}
+.header-contacts-spoiler-li.envelop {
+	background: url(/img/page_2/envelop.png) 20px 17px no-repeat;
+}
+.header-contacts-spoiler-li.tel {
+	background: url(/img/page_2/tel.png) 20px 17px no-repeat;
+}
+.header-contacts-spoiler-li.skype {
+	background: url(/img/page_2/skype.png) 20px 17px no-repeat;
+}
+.border{
+	width: 22px;
+	height: 15px;
+	position: absolute;
+	right: 86px;
+	bottom: 100%;
+	margin-bottom: -5px;
+}
+              /* ---  конец спойлера ----- */
+.content{
+	background-clip: #f6f6f6;
+}
+.conteiner-zero{
+	font-size: 0; 
+} 
+.content-nav{
+	 display: inline-block; 
+}
+.content-nav a{
+	color: #727272;
+	font: normal 18px 'Fira Sans';		
+}
+.content-nav-about{
+	height: 45px;
+	width: 214px;
+	border-right: 6px solid transparent; 
+	text-align: right;	
+	background: url(/img/page_2/about_me_grey.png) 91px center no-repeat;
+	padding-top: 15px;
+	padding-right: 24px;
+}
+              /* -------- active --------- */
+ .content-nav li.active {
+	border-right: 6px solid #33c1e3;
+}
+ .content-nav li.active a {
+	color: #33c1e3;
+}
+ .content-nav .content-nav-about.active {
+	background: url(/img/page_2/about_me_blue.png) 91px center no-repeat;
+}
+ .content-nav .content-nav-career.active {
+	background: url(/img/page_2/career_blue.png) 21px center no-repeat;
+}
+ .content-nav .content-nav-portfolio.active {
+	background: url(/img/page_2/portfolio_blue.png) 61px center no-repeat;
+}
+               /* -------- the end active ----- */
+.content-nav-career{
+	height: 45px;
+	width: 214px;
+	border-right: 6px solid transparent;  
+	text-align: right;	
+	background: url(/img/page_2/career_grey.png) 21px center no-repeat;
+	padding-top: 15px;
+	padding-right: 24px;
+}
+.content-nav-portfolio{
+	height: 45px;
+	width: 214px;
+	border-right: 6px solid transparent; 
+	text-align: right;	
+	background: url(/img/page_2/portfolio_grey.png) 61px center no-repeat;
+	padding-top: 13px;
+	padding-right: 24px;
+}
+.content-nav-about:hover{
+	background: url(/img/page_2/about_me_blue.png) 91px center no-repeat;
+}
+.content-nav-career:hover{
+	background: url(/img/page_2/career_blue.png) 21px center no-repeat;
+}
+.content-nav-portfolio:hover{
+	background: url(/img/page_2/portfolio_blue.png) 61px center no-repeat;
+}
+.content-nav li:hover a{
+	color: #33c1e3;
+}
+.content-nav-about a:active, .content-nav-career a:active, .content-nav-portfolio a:active{
+	color: #33c1e3;
+	font: bold 18px 'Fira Sans';
+}
+/*----------------  ABOUT  ---------------------------*/
+.content-main{
+	width: 720px; 
+	display: inline-block; 
+	vertical-align: top; 	
+	font: normal 18px 'Fira Sans';
+}
+.content-main-pic{
+	display: inline-block; 
+	height: 230px; 
+	width: 340px;
+	background: url(/img/page_2/pic.png) no-repeat center; 
+	vertical-align: top; 
+}
+.content-main-text{
+	display: inline-block;
+	width: 370px;
+	height: 350px;	
+}
+.content-main-text-title{
+	font: 500 35px 'Fira Sans';
+	color: #414141;
+	margin-bottom: 30px;
+}
+.content-main-text-basic{
+	font: 300 18px 'Fira Sans';
+	color: #727272;
+	width: 370px;
+	height: 290px;
+	margin-bottom: 50px;
+	overflow: scroll;
+	overflow-x: hidden;
+	padding-right: 20px; 
+}
+               /* --- стилизация скролл-бара ----- */
+.content-main-text-basic::-webkit-scrollbar-button {
+	background-image: url('');
+	background-repeat: no-repeat;
+	width: 5px;
+	height: 0px
+}
+.content-main-text-basic::-webkit-scrollbar-track {
+	background-color: #f6f6f6;
+}
+.content-main-text-basic::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #d8d8d8;
+}
+.content-main-text-basic::-webkit-scrollbar-thumb:hover{
+	background-color: #727272;
+}
+.content-main-text-basic::-webkit-resizer{
+	background-image: url('');
+	background-repeat: no-repeat;
+	width: 5px;
+	height: 0px
+}
+.content-main-text-basic::-webkit-scrollbar{
+	width: 5px;
+}
+                    /* ----конец скролл-бара----- */
+.content-main-text-button{
+	text-align: right;
+}
+.content-main-text-button-link{
+	display: inline-block;
+	height: 40px;
+	border: 2px solid #e85f61;
+	border-radius: 21px;	
+	font: bold 14px 'Fira Sans';
+	color: #e85f61;
+	text-align: center;
+	line-height: 38px;
+	background: url(/img/page_2/save-red.png) 13px center no-repeat;
+	padding-left: 37px;
+	padding-right: 14px;
+	transition: .5s;
+}
+.content-main-text-button-link:hover{
+	color: #fff;
+	background: url(/img/page_2/save-wite.png) 13px center no-repeat #e85f61;
+	transition: .5s;
+}
+/* ----------  CAREER ------------------------- */
+.career-main{
+	height: 660px;
+	width: 720px; 
+	padding-left: 20px;
+	display: inline-block; 
+	vertical-align: top;
+	font: normal 18px 'Fira Sans';
+}
+.career-title{		
+	font: 500 35px 'Fira Sans';
+ 	color: #414141;	
+	margin-bottom: 25px;  	
+}
+.career{
+	height: 526px;	
+}
+.career-block{
+	display: inline-block;
+	height: 525px;
+	width: 475px;
+	padding-left: 320px;
+}
+.career-block-li{
+	width: 380px;
+	position: relative;
+	background-color: #fff;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, .20);	
+	transition: .5s;
+}
+.career-block-li:before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	right: 100%;
+	top: 43%;
+	margin-right: 20px;
+	height: 155px;
+	width: 1px;
+	background-color: #dddddd;	
+}
+.career-block-li:last-child:before{
+	content: none;	
+}
+.img1{
+	height: 220px;
+	width: 220px;
+	background: url(/img/career/university.png) center center no-repeat;
+	border-radius: 7px;
+	vertical-align: top;
+	position: absolute;
+	right: 100%;
+	top: 0;
+	margin-right: 100px;
+}
+.img2{
+	height: 220px;
+	width: 220px;
+	background: url(/img/career/home.png) center center no-repeat;
+	border-radius: 7px;
+	vertical-align: top;
+	position: absolute;
+	right: 100%;
+	top: -139px;
+	margin-right: 100px;
+	opacity: 0;
+}
+.img3{
+	height: 220px;
+	width: 220px;
+	background: url(/img/career/home_2.png) center center no-repeat;
+	border-radius: 7px;
+	vertical-align: top;
+	position: absolute;
+	right: 100%;
+	top: -277px;
+	margin-right: 100px;
+	opacity: 0;
+}
+.img4{
+	height: 220px;
+	width: 220px;
+	background: url(/img/career/moskow.png) center center no-repeat;
+	border-radius: 7px;
+	vertical-align: top;
+	position: absolute;
+	right: 100%;
+	top: -415px;
+	margin-right: 100px;
+	opacity: 0;
+}
+.career-block-li:hover .img2, .career-block-li:hover .img3, .career-block-li:hover .img4{
+	opacity: 1;
+}
+.year{
+	font: 300 14px 'Fira Sans';
+	color: #727272;
+	position: absolute;
+	right: 100%;
+	top: 45%;
+	margin-right: 35px;
+}
+.career-block-li:hover .year{	
+	font: 600 18px 'Fira Sans';
+	color: #33c1e3;
+	margin-top: -2px;
+}
+.circle{
+	height: 20px;
+	width: 20px;
+	background-color: #33c1e3;
+	border: 5px solid #f6f6f6;
+	border-radius: 50%;
+	position: absolute;
+	right: 100%;
+	top: 43%;
+	margin-right: 10px;
+}
+.career-block-li:hover .circle{	
+	border: 5px solid #94e0f2;	
+}
+.career-block-li:hover{	
+	background-color: #33c1e3;	
+	transition: .5s;
+}
+.career-block-li:hover .career-block-title,
+.career-block-li:hover .career-block-vacancy,
+.career-block-li:hover .career-block-period{
+	color: #fff;
+}
+.career-block-title{
+	font: 400 21px 'Fira Sans';
+	color: #5a5a5a;
+	line-height: 26px
+}
+.career-block-vacancy{
+	font: 200 18px 'Fira Sans';
+	color: #727272;
+	line-height: 26px
+}
+.career-block-period{
+	font: 200 18px 'Fira Sans';
+	color: #727272;
+	line-height: 26px
+}
+/* ----------  PORTFOLIO ------------------------- */
+.portfolio{	
+	height: 660px;
+	width: 720px; 
+	padding-left: 20px;
+	display: inline-block; 
+	vertical-align: top;
+	font: normal 18px 'Fira Sans';
+ }
+.portfolio-title{		
+	font: 500 35px 'Fira Sans';
+ 	color: #414141;	
+	margin-bottom: 25px;  	
+}
+.portfolio-block{	
+	height: 280px;
+	width: 210px;
+	border-radius: 8px;
+	display: inline-block;
+	margin: 0 20px 20px 0;
+	overflow: hidden;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .20);
+	transition: .5s;
+}
+.portfolio-block:hover{
+	box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, .20);
+	transition: .5s;
+}
+.portfolio-block:hover .portfolio-block-info-title{
+	font: 400 21px 'Fira Sans';
+	color: #e85f61;
+}
+.portfolio-block-img{
+	height: 172px;
+	background: url(/img/portfolio/deals_app.png) no-repeat;
+}
+.portfolio-block-info{
+	height: 108px;
+	padding-left: 20px;
+	padding-top: 20px;
+	background-color: #fff;
+}
+.portfolio-block-info-title{
+	margin-bottom: 1px;
+	font: 400 21px 'Fira Sans';
+	color: #33c1e3;
+	transition: color .5s;
+}
+.portfolio-block-info-text{
+	font: 200 14px 'Fira Sans';
+	color: #414141;
+	margin-bottom: 12px;
+}
+.portfolio-block-info-site{
+	height: 13px;
+	font: 600 14px 'Fira Sans';
+	color: #aeaeae;
+	background: url(/img/portfolio/app-ico.png) left center no-repeat;
+	padding-left: 15px;
+}
+.i2{
+	background: url(/img/portfolio/drea_scapes.png) no-repeat;
+}
+.i3{
+	background: url(/img/portfolio/creative_studio.png) no-repeat;
+}
+.i4{
+	background: url(/img/portfolio/studi_frog.png) no-repeat;
+}
+.i5{
+	background: url(/img/portfolio/carbonara.png) no-repeat;
+}
+.ico{
+	background: url(/img/portfolio/landing-ico.png) left center no-repeat;
+	padding-left: 25px;
+	height: 19px;
+	line-height: 25px;
+}
+/* ------------------- FOOTER -------------------------  */
+.footer{
+	height: 50px;
+	background-color: #414141;	
+	margin-top: -50px;
+	position: relative;
+	z-index: 50;
+	min-width: 980px;
+}
+.footer-copy{
+	display: inline-block;
+	font: 200 14px 'Fira Sans';
+	color: #727272;
+	padding-top: 18px;	
+}
+.footer-social{
+	display: inline-block;
+	width: 110px;	
+	position: absolute;
+	right: 0;
+	top: 10px;	
+}
+.facebook{
+	display: inline-block;
+	height: 30px;
+	width: 31px;
+	background: url(/img/page_2/FaceBook_grey.png) no-repeat;
+	transition: .5s;
+}
+.vk{
+	display: inline-block;
+	height: 30px;
+	width: 31px;
+	background: url(/img/page_2/vk_grey.png) no-repeat;
+	transition: .5s;
+}
+.tweeter{
+	display: inline-block;
+	height: 30px;
+	width: 31px;
+	background: url(/img/page_2/Twitter_grey.png) no-repeat;
+	transition: .5s;
+}
+.facebook:hover{
+	height: 30px;
+	width: 31px;
+	background: url(/img/page_2/FaceBook_blue.png) no-repeat;
+	transition: .5s;
+}
+.vk:hover{
+	height: 30px;
+	width: 31px;
+	background: url(/img/page_2/vk_blue.png) no-repeat;
+	transition: .5s;
+}
+.tweeter:hover{
+	height: 30px;
+	width: 31px;
+	background: url(/img/page_2/Twitter_blue.png);
+	transition: .5s;
+}
+
