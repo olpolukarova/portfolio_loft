@@ -334,7 +334,9 @@ li{
 .content-main-text-basic::-webkit-scrollbar{
 	width: 5px;
 }
-                    /* ----конец скролл-бара----- */
+/* end						 */
+
+
 .content-main-text-button{
 	text-align: right;
 }
